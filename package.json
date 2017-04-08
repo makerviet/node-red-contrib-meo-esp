@@ -1,0 +1,14 @@
+{
+  "name"         : "node-red-contrib-meo-iot",
+  "version"      : "0.1.0",
+  "description"  : "A node for MEO ESP Board",
+  "dependencies" : {
+    
+  },
+  "keywords"     : [ "node-red", "meo", "esp", "nodemcu" ],
+  "node-red"     : {
+    "nodes": {
+      "meo-esp": "meo-esp/meo-esp.js"
+    }
+  }
+}

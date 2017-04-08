@@ -1,6 +1,5 @@
 module.exports = function(RED) {
   "use strict";
-  let isUtf8 = require('is-utf8');
 
   function MEOESPInNode(config) {
     RED.nodes.createNode(this, config);
@@ -16,7 +15,7 @@ module.exports = function(RED) {
       this.status({fill:"red",shape:"ring",text:"disconnected"});
       node.brokerConn.register(this);
       this.brokerConn.subscribe(this.topic, this.qos, (topic, payload, packet) => {
-        if (isUtf8(payload)) payload = payload.toString();
+        payload = payload.toString();
         let msg = {
           deviceId: config.deviceId,
           payload: this.parseDeviceDataToJson(payload)
@@ -71,7 +70,7 @@ module.exports = function(RED) {
           return result;
       } else {
         // TODO: handle wrong format
-        node.error('wrong data format from MEO ESP', data);
+        node.error(`wrong data format received from MQTT channel "esp/${config.deviceId}/out"`, data);
       }
     }
   }
