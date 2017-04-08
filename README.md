@@ -13,11 +13,11 @@ There are 2 nodes available at the moment:
     "D7": 1,
     "D8": 0,
     "A0": 129,
-    "V1": undefined,
-    "V2": undefined,
-    "V3": undefined,
-    "V4": undefined,
-    "V5": undefined
+    "V1": "VALUE FROM V1",
+    "V2": "VALUE FROM V2",
+    "V3": "VALUE FROM V3",
+    "V4": "VALUE FROM V4",
+    "V5": "VALUE FROM V5"
   }
 }
 ```
