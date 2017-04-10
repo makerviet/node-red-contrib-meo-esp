@@ -32,6 +32,6 @@ Node-RED-MEO-ESP requires Node-RED version 0.14 or more recent.
 
 To install the stable version run the following command in your Node-RED user directory (typically `~/.node-red`):
 
-    npm i node-red-contrib-meo-esp
+    npm i node-red-contrib-meo-iot
 
 Open your Node-RED instance and you should have one new node in input category and one new node in output category.
