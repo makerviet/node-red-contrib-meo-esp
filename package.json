@@ -1,6 +1,6 @@
 {
-  "name"         : "node-red-contrib-meo-iot",
-  "version"      : "0.1.0",
+  "name"         : "node-red-contrib-meo-esp",
+  "version"      : "0.1.1",
   "description"  : "A node for MEO ESP Board",
   "dependencies" : {
     
@@ -12,7 +12,7 @@
   "license": "Apache-2.0",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/tobernguyen/node-red-contrib-meo-iot.git"
+		"url": "https://github.com/tobernguyen/node-red-contrib-meo-esp.git"
 	},
 
   "keywords"     : [ "node-red", "meo", "esp", "nodemcu" ],
