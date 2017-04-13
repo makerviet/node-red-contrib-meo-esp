@@ -114,6 +114,8 @@ module.exports = function(RED) {
       console.log(config);
       var pinValues = [];
       var msg = "";
+
+      // Control output pin
       for (var i=0; i<5; i++) {
         var data = "";
         if (config[`D${i}`].length > 0) {
@@ -123,6 +125,13 @@ module.exports = function(RED) {
         }
         pinValues.push(data);
       };
+
+      // Control custom functions on ESP
+      // TODO: implement this
+      for (var i=0; i<5; i++) {
+        pinValues.push('');
+      }
+
       return pinValues.join(";");
     }
   }
