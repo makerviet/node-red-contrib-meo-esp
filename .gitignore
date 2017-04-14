@@ -6,3 +6,4 @@ puball.sh
 setenv.sh
 /.project
 .vscode
+.DS_Store

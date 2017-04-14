@@ -1,6 +1,6 @@
 {
   "name"         : "node-red-contrib-meo-esp",
-  "version"      : "0.1.2",
+  "version"      : "0.1.3",
   "description"  : "A node for MEO ESP Board",
   "dependencies" : {
     
@@ -19,7 +19,7 @@
   "node-red"     : {
     "version": ">=0.14.0",
     "nodes": {
-      "meo-esp": "meo-esp/meo-esp.js"
+      "meo-esp": "nodes/meo-esp.js"
     }
   }
 }

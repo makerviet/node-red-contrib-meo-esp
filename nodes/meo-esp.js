@@ -128,8 +128,8 @@ module.exports = function(RED) {
 
       // Control custom functions on ESP
       // TODO: implement this
-      for (var i=0; i<5; i++) {
-        pinValues.push('');
+      for (var i=1; i<=5; i++) {
+        pinValues.push(config[`F${i}`] ? 1 : 0);
       }
 
       return pinValues.join(";");
